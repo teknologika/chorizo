@@ -1,4 +1,5 @@
-chorizo
+Chorizo
 =======
 
-Chorizo test automation framework and supporting tools
+Chorizo  - because all open source testing tools need to have names that start with a C and be edible.
+
