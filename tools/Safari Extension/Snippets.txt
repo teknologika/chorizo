@@ -1,0 +1,73 @@
+Snippets
+
+Switch Statement
+
+	switch(className){
+	      case 'class1':
+	     //put your cases here
+	   }
+
+Looping
+
+	.each() is essentially a drop-in replacement of a traditional for or for-in loop. Given:
+
+		var sum = 0;
+		
+		var arr = [ 1, 2, 3, 4, 5 ];
+
+	then this:
+
+		for ( var i = 0, l = arr.length; i < l; i++ ) {
+	   		sum += arr[ i ];
+	   	}
+	
+	
+	console.log( sum ); // 15
+	can be replaced with this:
+
+	.each( arr, function( index, value ){
+	   sum += value;
+	);
+	
+	console.log( sum ); // 15
+
+
+
+Split String
+
+	Using split()
+	
+	var data = $('#date').text();
+	var arr = data.split('/');
+	$("#date").html("<span>"+arr[0] + "</span></br>" + arr[1]+"/"+arr[2]);
+	Demo --> http://jsfiddle.net/K3D6d/5/
+	
+	When you split this string ---> 23/05/2013 on /
+	
+	var myString = "23/05/2013";
+	var arr = myString.split('/');
+	you'll get an array of size 3
+	
+	arr[0] --> 23
+	arr[1] --> 05
+	arr[2] --> 2013
+
+Trim whitespace
+
+$.trim
+
+Lower Case
+
+	var jIsHasKids = $('#chkIsHasKids:checked').val().toLowerCase();
+
+
+
+selectors
+
+	var id = $(this).children(":selected").attr("id");
+		
+		$('input')
+
+	:input - input, text area, select and button elements 
+
+
